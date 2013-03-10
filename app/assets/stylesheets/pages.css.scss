@@ -1,0 +1,112 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1, header, footer, nav
+{
+	text-align: center;
+	padding: 10px;
+}
+
+leader, footer, p, #filmo
+{
+	background-color: white;
+}
+
+#filmo
+{
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+
+#filmo table, #filmo tr, #filmo td
+{
+	border-collapse: collapse;
+	border: 1px solid grey;
+}
+
+td
+{
+	padding: 5px;
+}
+
+footer
+{
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+nav
+{
+	background-color: black;
+}
+
+nav a
+{
+	margin-right: 10px;
+	color: white;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.titles_para
+{
+	font-size: 20px;
+	font-weight: bolder;
+	color: #1AB09C;
+}
+
+a:hover
+{
+	color: red;
+}
+
+.img_bio
+{
+	display: block;
+	margin: 0 auto;
+}
+
+p
+{
+	padding: 10px;
+}
+
+h1
+{
+	color: white;
+}
+
+header, footer
+{
+	margin-top: 15px;
+	border-radius: 10px;
+}
+
+header
+{
+	font-size: 40px;
+	background-image: url("bann.jpg");
+	font-weight: bolder;
+}
+
+body
+{
+	margin: 0 auto;
+	width: 800px;
+}
+
+p, nav
+{
+	border-radius: 10px;
+}
+
+html
+{
+	background-image: url("bg.jpg");
+	background-attachment: fixed;
+}
