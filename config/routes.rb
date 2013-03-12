@@ -1,14 +1,18 @@
 Wiki::Application.routes.draw do
 
+  get "pages/best"
+
 root :to => 'pages#home'
 
   match '/home', :to => 'pages#home'
   match '/biography',   :to => 'pages#biography'
   match '/filmography',    :to => 'pages#filmography'
+  match '/best',    :to => 'pages#best'
 
   get "pages/home"
   get "pages/biography"
   get "pages/filmography"
+  get "pages/best"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
 	def filmography
 	end
+	
+	def best
+	end
 end

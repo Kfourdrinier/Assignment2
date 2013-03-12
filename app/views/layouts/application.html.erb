@@ -10,15 +10,15 @@
 	<header>
 		Official Jim Carrey's wiki.<br />
 	</header>
-	<%= yield %>
-	<nav>
-		<a href="http://localhost:3000/">Home</a>
-		<a href="http://localhost:3000/biography">Biography</a>
-		<a href="http://localhost:3000/filmography">Filmography</a>
-	</nav>
-	<footer>
-		&copy;Kfourdrinier all rights reserved.<br />If you have any questions or recommendations, please contact us at : 
-		<a href="mailto:fourdrinier.kevin@gmail.com">fourdrinier.kevin@gmail.com</a>
-	</footer>
+	<div id="main_part">
+		<%= yield %>
+		<nav>
+			<br /><br />
+			<a href="http://localhost:3000/">Home</a><br /><br /><br />
+			<a href="http://localhost:3000/biography">Biography</a><br /><br /><br />
+			<a href="http://localhost:3000/filmography">Filmography</a><br /><br /><br />
+			<a href="http://localhost:3000/best">Best Moments</a><br /><br /><br />
+		</nav>
+	</div>
 </body>
 </html>

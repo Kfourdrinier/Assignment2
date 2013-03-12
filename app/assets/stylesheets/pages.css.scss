@@ -8,16 +8,41 @@ h1, header, footer, nav
 	padding: 10px;
 }
 
-leader, footer, p, #filmo
+leader, footer, section, #filmo
 {
 	background-color: white;
 }
 
+#main_part
+{
+	height: 650px;
+}
+
+#spacer
+{
+	clear: both;
+	height: 2px;
+}
+
+nav, #bio, #home, #best, #filmo
+{
+	height: 670px;
+}
+
+#bio, #home, #best
+{
+	float: right;
+	width: 580px;
+	overflow: auto;
+}
+
 #filmo
 {
+	float: right;
 	padding: 10px;
-	border-radius: 10px;
-	margin-bottom: 15px;
+	width: 560px;
+	overflow: auto;
+	height: 650px;
 }
 
 #filmo table, #filmo tr, #filmo td
@@ -40,12 +65,16 @@ footer
 nav
 {
 	background-color: black;
+	float: left;
+	width: 200px;
+	height: 100%;
 }
 
 nav a
 {
-	margin-right: 10px;
 	color: white;
+	padding: 5px;
+	border: 2px solid white;
 }
 
 a
@@ -71,7 +100,7 @@ a:hover
 	margin: 0 auto;
 }
 
-p
+section
 {
 	padding: 10px;
 }
@@ -84,7 +113,6 @@ h1
 header, footer
 {
 	margin-top: 15px;
-	border-radius: 10px;
 }
 
 header
@@ -98,11 +126,6 @@ body
 {
 	margin: 0 auto;
 	width: 800px;
-}
-
-p, nav
-{
-	border-radius: 10px;
 }
 
 html

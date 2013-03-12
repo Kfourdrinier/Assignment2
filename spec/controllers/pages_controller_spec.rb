@@ -24,6 +24,13 @@ describe PagesController do
     end
   end
   
+  describe "GET 'best'" do
+    it "returns http success" do
+      get 'best'
+      response.should be_success
+    end
+  end
+  
   describe "Make a test for the Home Page" do
 
 	it "has good title" do
@@ -34,11 +41,6 @@ describe PagesController do
 	it "has header" do
 		get 'home'
 		response.should have_selector("header")
-	end
-
-	it "has footer" do
-		get 'home'
-		response.should have_selector("footer")
 	end
 
 	it "has nav" do
@@ -59,11 +61,6 @@ describe "Make a test for the First Page" do
 		response.should have_selector("header")
 	end
 
-	it "has footer" do
-		get 'biography'
-		response.should have_selector("footer")
-	end
-
 	it "has nav" do
 		get 'biography'
 		response.should have_selector("nav")
@@ -82,13 +79,26 @@ describe "Make a test for the Second Page" do
 		response.should have_selector("header")
 	end
 
-	it "has footer" do
+	it "has nav" do
 		get 'filmography'
-		response.should have_selector("footer")
+		response.should have_selector("nav")
+	end
+end
+
+describe "Make a test for the Third Page" do
+
+	it "has good title" do
+		get 'best'
+		response.should have_selector("title", :content => "Jim Carrey - Wiki")
+	end
+
+	it "has header" do
+		get 'best'
+		response.should have_selector("header")
 	end
 
 	it "has nav" do
-		get 'filmography'
+		get 'best'
 		response.should have_selector("nav")
 	end
 end
@@ -105,7 +115,11 @@ describe "Test all routes for wiki" do
 
 	it "routes to the second page" do
 		expect(:get => "/pages/filmography").to route_to(:controller => "pages", :action => "filmography")
-	end	
+	end
+	
+	it "routes to the third page" do
+		expect(:get => "/pages/best").to route_to(:controller => "pages", :action => "best")
+	end
 end
 
 end
