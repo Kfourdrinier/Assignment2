@@ -64,7 +64,7 @@ footer
 
 nav
 {
-	background-color: black;
+	background: linear-gradient(to bottom, black, grey);;
 	float: left;
 	width: 200px;
 	height: 100%;
@@ -87,6 +87,16 @@ a
 	font-size: 20px;
 	font-weight: bolder;
 	color: #1AB09C;
+}
+
+#head_link:hover
+{
+	color: black;
+}
+
+#head_link:visited
+{
+	color: black;
 }
 
 a:hover
